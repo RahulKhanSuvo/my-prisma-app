@@ -55,7 +55,7 @@ export default async function PostPage({
       </header>
 
       <div className="mt-16 sm:mt-24 space-y-8">
-        {post.content.split("\n\n").map((paragraph, index) => (
+        {post.content?.split("\n\n").map((paragraph, index) => (
           <p key={index} className="text-xl leading-9 text-zinc-600 dark:text-zinc-400 selection:bg-zinc-900 selection:text-white dark:selection:bg-zinc-50 dark:selection:text-black">
             {paragraph}
           </p>
