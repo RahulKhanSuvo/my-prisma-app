@@ -7,6 +7,7 @@ import Link from "next/link";
 
 export default function NewPostPage() {
   const [state, action, isPending] = useActionState(createPostAction, null);
+  console.log(state)
 
   return (
     <div className="mx-auto max-w-2xl px-6 py-12 md:py-24 animate-in fade-in slide-in-from-bottom-4 duration-700">
